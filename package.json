@@ -23,7 +23,7 @@
     "json-string"
   ],
   "author": "Bancha D. <bancha.d55@rsu.ac.th>",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mbn00123/json_to_txt/issues"
   },
