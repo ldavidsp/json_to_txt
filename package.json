@@ -1,6 +1,6 @@
 {
-  "name": "json-to-txt",
-  "version": "2.1.0",
+  "name": "@mbn00123/json-to-txt",
+  "version": "2.1.1",
   "description": "Reads JSON data (Array of objects) and returns a string in a txt file format.",
   "main": "json_to_txt.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vprince001/json_to_txt.git"
+    "url": "git+https://github.com/mbn00123/json_to_txt.git"
   },
   "keywords": [
     "convertor",
@@ -22,12 +22,12 @@
     "get-string-from-json",
     "json-string"
   ],
-  "author": "Prince Verma",
-  "license": "ISC",
+  "author": "Bancha D. <bancha.d55@rsu.ac.th>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vprince001/json_to_txt/issues"
+    "url": "https://github.com/mbn00123/json_to_txt/issues"
   },
-  "homepage": "https://github.com/vprince001/json_to_txt#readme",
+  "homepage": "https://github.com/mbn00123/json_to_txt#readme",
   "dependencies": {
     "mocha": "^6.1.4",
     "nyc": "^14.1.1"

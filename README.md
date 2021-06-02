@@ -22,14 +22,14 @@ Use `filePath` key to provide `JSON data from file`.
 
 ```javascript
 const jsonToTxt = require("json-to-txt");
-const dataInString = jsonToTxt({ filePath: "./filePath.json" });
+const dataInString = jsonToTxt({ filePath: "./filePath.json", newLine: "\r\n" });
 ```
 
 Use `data` key to provide `JSON data from variable or directly`.
 
 ```javascript
 const jsonToTxt = require("json-to-txt");
-const dataInString = jsonToTxt({ data: someJSONData });
+const dataInString = jsonToTxt({ data: someJSONData, newLine: "\n" });
 ```
 
 #### Sample input (json data) :

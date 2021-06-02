@@ -6,7 +6,10 @@ const main = function (params) {
   const headers = Object.keys(data[0]);
   const startPoints = getStartPoints(data, headers);
   const rows = getRows(data, headers, startPoints);
-  return rows.join("\n");
+
+  //newLineCode ex. "\r\n", "\n"
+  const newLineCode = params.newLine || "\n";
+  return rows.join(newLineCode);
 };
 
 module.exports = main;
