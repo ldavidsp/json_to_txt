@@ -1,11 +1,5 @@
 const { WS, ES, FORMAT } = require("./constants")
 
-const addSpaces = function (string, spaceCount) {
-  for (let index = 0; index < spaceCount; index++) {
-    string += WS;
-  }
-  return string;
-};
 
 const removeDoubleQuotes = function (value) {
   return value.replace(/"/g, ' ');
@@ -16,8 +10,10 @@ const getRow = function (headers, startPoints, isHeaderRow, obj) {
   headers.forEach((header, index) => {
     const value = isHeaderRow ? header : obj[header];
     row += typeof value === 'object' ? removeDoubleQuotes(JSON.stringify(value)) : value;
-    const spaceCount = startPoints[index + 1] - row.length;
-    row = addSpaces(row, spaceCount);
+
+    if (index < headers.length - 1) {
+      row = row + WS;
+    }
   });
   return row;
 };
@@ -64,4 +60,4 @@ const getData = function (params, fs) {
   return params.data
 }
 
-module.exports = { addSpaces, getRow, getRows, getStartPoint, getStartPoints, getData };
+module.exports = { getRow, getRows, getStartPoint, getStartPoints, getData };

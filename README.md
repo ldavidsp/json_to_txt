@@ -9,7 +9,7 @@ Reads JSON data (Array of objects) and returns a string in a txt file format.
 ## Installation
 
 ```
-npm i --save json-to-txt
+npm i --save @mbn00123/json-to-txt
 ```
 
 ## Usage
@@ -21,14 +21,14 @@ npm i --save json-to-txt
 Use `filePath` key to provide `JSON data from file`.
 
 ```javascript
-const jsonToTxt = require("json-to-txt");
+const jsonToTxt = require("@mbn00123/json-to-txt");
 const dataInString = jsonToTxt({ filePath: "./filePath.json", newLine: "\r\n" });
 ```
 
 Use `data` key to provide `JSON data from variable or directly`.
 
 ```javascript
-const jsonToTxt = require("json-to-txt");
+const jsonToTxt = require("@mbn00123/json-to-txt");
 const dataInString = jsonToTxt({ data: someJSONData, newLine: "\n" });
 ```
 

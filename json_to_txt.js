@@ -9,7 +9,7 @@ const main = function (params) {
 
   //newLineCode ex. "\r\n", "\n"
   const newLineCode = params.newLine || "\n";
-  return rows.join(newLineCode);
+  return rows.join(newLineCode) + newLineCode;
 };
 
 module.exports = main;
